@@ -251,15 +251,21 @@ function classify(d, scores){
   return {results, cls, label, marginAbs, marginPct, latestYear: latest ? latest.y : null};
 }
 
-function yrCell(r, h){
+function yrCell(r, h, hasScores){
   if (!h) return '<div class="yr"><span class="na">未招生</span></div>';
-  if (h.cutoff == null) return '<div class="yr"><span class="na">無錄取分數</span>'+(h.quota!=null?'<span class="na">名額 '+h.quota+'</span>':'')+'</div>';
-  const icon = r.pass ? '<span class="pass">✓ 過</span>' : '<span class="fail">✗ 未過</span>';
+  if (h.cutoff == null) return '<div class="yr"><span class="na">無錄取分</span><span class="na">0/'+(h.quota??'--')+' 人</span></div>';
+  const cutoffStr = h.cutoff.toFixed(2).replace(/\.?0+$/,'');
   const uq = r.underQuota ? '<span class="tag">未足額</span>' : '';
+  if (!hasScores){  // 未輸入成績:只呈現事實,不做判定
+    return '<div class="yr"><span>最低 <b>'+cutoffStr+'</b>'+uq+'</span>'
+      + '<span class="na">'+(h.admitted??'--')+'/'+(h.quota??'--')+' 人</span></div>';
+  }
+  const diff = r.my - h.cutoff;
+  const icon = r.pass ? '<span class="pass">✓</span>' : '<span class="fail">✗</span>';
+  const diffStr = '<span class="'+(diff>=0?'pass':'fail')+'">'+(diff>=0?'+':'')+diff.toFixed(1)+'</span>';
   return '<div class="yr">'
-    + '<span>最低 <b>'+h.cutoff.toFixed(2).replace(/\.?0+$/,'')+'</b>'+uq+'</span>'
-    + '<span>我的 <b>'+r.my.toFixed(1)+'</b> '+icon+'</span>'
-    + '<span class="na">'+(h.admitted??'--')+'/'+(h.quota??'--')+' 人</span>'
+    + '<span>'+icon+' 最低 <b>'+cutoffStr+'</b>'+uq+'</span>'
+    + '<span class="na">差 '+diffStr+' · '+(h.admitted??'--')+'/'+(h.quota??'--')+' 人</span>'
     + '</div>';
 }
 
@@ -322,7 +328,7 @@ function render(){
   $('rows').innerHTML = list.map(e => {
     const {d, c} = e;
     const pub = isPublic(d.school);
-    const m = c.marginAbs;
+    const m = hasScores ? c.marginAbs : null;
     let marginHtml;
     if (m == null) marginHtml = '<span class="na" style="color:var(--muted)">--</span>';
     else {
@@ -333,14 +339,16 @@ function render(){
     const starred = wish.includes(d.code);
     return '<tr>'
       + '<td><button class="star'+(starred?' on':'')+'" data-code="'+d.code+'" title="加入/移出志願清單">'+(starred?'★':'☆')+'</button></td>'
-      + '<td><span class="badge b-'+c.cls+'">'+c.label+'</span></td>'
+      + '<td>'+(hasScores || c.cls==='none'
+          ? '<span class="badge b-'+c.cls+'">'+c.label+'</span>'
+          : '<span class="badge b-none">待輸入</span>')+'</td>'
       + '<td><div class="school'+(pub?' public':'')+'">'+schoolTag(d.school)+d.school+'</div><div class="dept">'+d.dept+'</div><div class="wt" style="color:#94a3b8">代碼 '+d.code+'</div></td>'
       + '<td class="wt">'+wtStr(d.weights)+'<br><span style="color:#94a3b8">滿分 '+maxTotal(d.weights)+'</span></td>'
       + '<td class="num">'+(d.quota ?? '--')+'</td>'
-      + '<td class="num"><b>'+e.my115.toFixed(1)+'</b></td>'
-      + '<td>'+yrCell(c.results['112'], d.history['112'])+'</td>'
-      + '<td>'+yrCell(c.results['113'], d.history['113'])+'</td>'
-      + '<td>'+yrCell(c.results['114'], d.history['114'])+'</td>'
+      + '<td class="num"><b>'+(hasScores ? e.my115.toFixed(1) : '--')+'</b></td>'
+      + '<td>'+yrCell(c.results['112'], d.history['112'], hasScores)+'</td>'
+      + '<td>'+yrCell(c.results['113'], d.history['113'], hasScores)+'</td>'
+      + '<td>'+yrCell(c.results['114'], d.history['114'], hasScores)+'</td>'
       + '<td class="num">'+marginHtml+(c.latestYear&&c.latestYear!=='114'?'<div class="wt">(對 '+c.latestYear+' 年)</div>':'')+'</td>'
       + '</tr>';
   }).join('');
@@ -378,6 +386,7 @@ function computeSim(scores, simYear){
 
 function renderWish(scores){
   const simYear = $('simYear').value;
+  const hasScores = SUBJECTS.some(k => scores[k] > 0);
   $('wishCount').textContent = wish.length;
   $('wishEmpty').style.display = wish.length ? 'none' : 'block';
 
@@ -387,7 +396,7 @@ function renderWish(scores){
     const d = byCode[code];
     const yrs = ['112','113','114'].map(y => {
       const h = d.history[y];
-      if (!h || h.cutoff == null) return '<span class="na" style="color:var(--muted)">'+y+' --</span>';
+      if (!hasScores || !h || h.cutoff == null) return '<span class="na" style="color:var(--muted)">'+y+' --</span>';
       const pass = weighted(scores, h.weights) >= h.cutoff;
       return '<span class="'+(pass?'pass':'fail')+'" style="color:var(--'+(pass?'ok':'risk')+')">'+y+' '+(pass?'✓':'✗')+'</span>';
     }).join('');
@@ -396,7 +405,7 @@ function renderWish(scores){
       + '<div class="who"><div class="s">'+schoolTag(d.school)+d.school+'</div><div class="d">'+d.dept+' <span style="color:#94a3b8">('+d.code+')</span></div></div>'
       + (i===landIdx ? '<span class="land-tag">🎯 預估落點</span>' : '')
       + '<div class="yrs">'+yrs+'</div>'
-      + '<div class="tot">'+weighted(scores, d.weights).toFixed(1)+'</div>'
+      + '<div class="tot">'+(hasScores ? weighted(scores, d.weights).toFixed(1) : '--')+'</div>'
       + '<div class="btns">'
       +   '<button data-act="up" data-i="'+i+'" title="上移">↑</button>'
       +   '<button data-act="down" data-i="'+i+'" title="下移">↓</button>'
