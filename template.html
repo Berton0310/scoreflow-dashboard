@@ -145,7 +145,9 @@ tbody tr:hover{background:#fafcff}
 
   <div class="controls">
     <input type="search" id="q" placeholder="🔍 搜尋學校或科系名稱…">
-    <select id="fType"><option value="">全部學校</option><option value="public">公立</option><option value="private">私立</option></select>
+    <select id="fType"><option value="">公私立</option><option value="public">公立</option><option value="private">私立</option></select>
+    <select id="fSchool"><option value="">全部學校</option></select>
+    <select id="fDept"><option value="">全部科系類別</option></select>
     <select id="fSort">
       <option value="margin">依 114 年安全差距排序</option>
       <option value="cutoff">依 114 年錄取分數排序</option>
@@ -196,6 +198,21 @@ function wtStr(w){
 }
 function maxTotal(w){ return SUBJECTS.reduce((a,k)=>a+100*(w[k]??0),0); }
 function isPublic(school){ return school.startsWith('國立') || school.includes('市立'); }
+
+// 科系類別:依名稱關鍵字分類
+const DEPT_CATS = [   // 順序有意義:由specific到generic,先中先贏
+  ['外語 / 英語 / 語文', /外語|英語|英文|語文|翻譯|語言治療|德語|日語|法國語文|中文/],
+  ['醫護 / 幼保', /護理|健康|物理治療|醫務|幼兒|嬰幼兒|保育|照護|藥理/],
+  ['觀光 / 餐旅 / 休閒', /觀光|休閒|旅遊|旅運|旅館|餐旅|餐飲|運動/],
+  ['資訊 / 傳播', /資訊|多媒體|傳播/],
+  ['國貿 / 財金 / 會計', /貿易|財務|金融|會計|財政|稅務|風險|保險|國際商務|國際企業|國際管理/],
+  ['行銷 / 物流 / 航運', /行銷|流通|物流|運籌|航運|航海|航空|運務|運輸|海空/],
+  ['商管 / 企業經營', /企業管理|經營|工商|商務|管理|人力資源|文化創意|不分系/],
+];
+function deptCat(dept){
+  for (const [name, re] of DEPT_CATS) if (re.test(dept)) return name;
+  return '其他';
+}
 function schoolTag(school){
   return isPublic(school)
     ? '<span class="stag pub">公立</span>'
@@ -253,6 +270,8 @@ function render(){
   const hasScores = SUBJECTS.some(k => scores[k] > 0);
   const q = $('q').value.trim().toLowerCase();
   const ft = $('fType').value;
+  const fs = $('fSchool').value;
+  const fd = $('fDept').value;
   const sort = $('fSort').value;
 
   const enriched = DATA.map(d => {
@@ -284,6 +303,8 @@ function render(){
     if (activeFilter && e.c.cls !== activeFilter) return false;
     if (ft === 'public' && !isPublic(e.d.school)) return false;
     if (ft === 'private' && isPublic(e.d.school)) return false;
+    if (fs && e.d.school !== fs) return false;
+    if (fd && deptCat(e.d.dept) !== fd) return false;
     if (q && !(e.d.school+e.d.dept).toLowerCase().includes(q)) return false;
     return true;
   });
@@ -637,10 +658,32 @@ function load(){
 }
 
 $('totalDepts').textContent = DATA.length;
+
+// 學校下拉選單:公立在前、各依科系數排序,顯示科系數
+{
+  const bySchool = {};
+  for (const d of DATA) (bySchool[d.school] = bySchool[d.school] || []).push(d);
+  const schools = Object.keys(bySchool).sort((a, b) => {
+    const pa = isPublic(a), pb = isPublic(b);
+    if (pa !== pb) return pa ? -1 : 1;
+    return bySchool[b].length - bySchool[a].length;
+  });
+  $('fSchool').innerHTML = '<option value="">全部學校(' + schools.length + ' 所)</option>'
+    + schools.map(s => '<option value="'+s+'">'+(isPublic(s)?'🔵':'🟣')+' '+s+'('+bySchool[s].length+')</option>').join('');
+
+  const catCount = {};
+  for (const d of DATA) catCount[deptCat(d.dept)] = (catCount[deptCat(d.dept)] || 0) + 1;
+  const cats = DEPT_CATS.map(c => c[0]).concat('其他').filter(c => catCount[c]);
+  $('fDept').innerHTML = '<option value="">全部科系類別</option>'
+    + cats.map(c => '<option value="'+c+'">'+c+'('+catCount[c]+')</option>').join('');
+}
+
 load();
 for (const k of SUBJECTS) $('s-'+k).addEventListener('input', () => { save(); render(); });
 $('q').addEventListener('input', render);
 $('fType').addEventListener('change', render);
+$('fSchool').addEventListener('change', render);
+$('fDept').addEventListener('change', render);
 $('fSort').addEventListener('change', render);
 render();
 </script>
