@@ -33,6 +33,7 @@ h1{font-size:22px;margin-bottom:4px}
 .card.active{outline:2px solid var(--accent)}
 .card .n{font-size:26px;font-weight:700}
 .card .t{font-size:12.5px;color:var(--muted)}
+.card .crit{font-size:11px;color:#94a3b8;margin-top:3px;line-height:1.45}
 .card.c-safe .n{color:var(--ok)} .card.c-good .n{color:var(--maybe)}
 .card.c-edge .n{color:var(--warn)} .card.c-hard .n{color:var(--risk)}
 .card.c-none .n{color:var(--none)}
@@ -255,15 +256,15 @@ function render(){
   const counts = {safe:0,good:0,edge:0,hard:0,none:0};
   for (const e of enriched) counts[e.c.cls]++;
   const cardDefs = [
-    ['', '全部', DATA.length, ''],
-    ['safe','🟢 穩上',counts.safe,'c-safe'],
-    ['good','🔵 有機會',counts.good,'c-good'],
-    ['edge','🟡 邊緣',counts.edge,'c-edge'],
-    ['hard','🔴 困難',counts.hard,'c-hard'],
-    ['none','⚪ 無歷年資料',counts.none,'c-none'],
+    ['', '全部', DATA.length, '', '15 外語群英語類全部校系'],
+    ['safe','🟢 穩上',counts.safe,'c-safe','三年最低分皆超過,且贏最近年 3% 以上(滿分 700≈21 分、900≈27 分、1100≈33 分)'],
+    ['good','🔵 有機會',counts.good,'c-good','超過最近一年最低錄取分,但緩衝不到 3%'],
+    ['edge','🟡 邊緣',counts.edge,'c-edge','與最近年最低分相差 ±3% 以內(約 ±21~33 分)'],
+    ['hard','🔴 困難',counts.hard,'c-hard','低於最近年最低分超過 3%(差 21~33 分以上)'],
+    ['none','⚪ 無歷年資料',counts.none,'c-none','115 新設/更名系科,或歷年無錄取分數可比'],
   ];
-  $('cards').innerHTML = cardDefs.map(([k,t,n,cc]) =>
-    '<div class="card '+cc+(activeFilter===k?' active':'')+'" data-f="'+k+'"><div class="n">'+(hasScores||k===''||k==='none'?n:'–')+'</div><div class="t">'+t+'</div></div>'
+  $('cards').innerHTML = cardDefs.map(([k,t,n,cc,crit]) =>
+    '<div class="card '+cc+(activeFilter===k?' active':'')+'" data-f="'+k+'" title="'+crit+'"><div class="n">'+(hasScores||k===''||k==='none'?n:'–')+'</div><div class="t">'+t+'</div><div class="crit">'+crit+'</div></div>'
   ).join('');
   document.querySelectorAll('.card').forEach(el => el.onclick = () => {
     activeFilter = (activeFilter === el.dataset.f) ? '' : el.dataset.f; render();
@@ -291,8 +292,13 @@ function render(){
     const {d, c} = e;
     const pub = isPublic(d.school);
     const m = c.marginAbs;
-    const marginHtml = m == null ? '<span class="na" style="color:var(--muted)">--</span>'
-      : '<span class="'+(m>=0?'margin-pos':'margin-neg')+'">'+(m>=0?'+':'')+m.toFixed(1)+'</span>';
+    let marginHtml;
+    if (m == null) marginHtml = '<span class="na" style="color:var(--muted)">--</span>';
+    else {
+      const thr = maxTotal(d.history[c.latestYear].weights) * 0.03;
+      marginHtml = '<span class="'+(m>=0?'margin-pos':'margin-neg')+'">'+(m>=0?'+':'')+m.toFixed(1)+'</span>'
+        + '<div class="wt">3% 門檻 ≈ '+thr.toFixed(0)+' 分</div>';
+    }
     const starred = wish.includes(d.code);
     return '<tr>'
       + '<td><button class="star'+(starred?' on':'')+'" data-code="'+d.code+'" title="加入/移出志願清單">'+(starred?'★':'☆')+'</button></td>'
