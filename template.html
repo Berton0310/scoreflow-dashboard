@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>統測登記分發落點儀表板 — 15 外語群英語類</title>
+<style>
+:root{
+  --bg:#f4f6fa; --card:#ffffff; --ink:#1a2433; --muted:#68758a;
+  --line:#e3e8f0; --accent:#2563eb; --accent-soft:#eff4ff;
+  --ok:#16a34a; --ok-bg:#ecfdf3;
+  --warn:#d97706; --warn-bg:#fffbeb;
+  --risk:#dc2626; --risk-bg:#fef2f2;
+  --maybe:#0891b2; --maybe-bg:#ecfeff;
+  --none:#64748b; --none-bg:#f1f5f9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI","Microsoft JhengHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);padding:24px 16px 80px}
+.wrap{max-width:1240px;margin:0 auto}
+h1{font-size:22px;margin-bottom:4px}
+.sub{color:var(--muted);font-size:13px;margin-bottom:20px;line-height:1.7}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px}
+.panel h2{font-size:15px;margin-bottom:12px}
+.scores{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end}
+.score-field{display:flex;flex-direction:column;gap:5px}
+.score-field label{font-size:13px;color:var(--muted)}
+.score-field input{width:110px;padding:9px 10px;border:1px solid var(--line);border-radius:9px;font-size:16px;text-align:center}
+.score-field input:focus{outline:2px solid var(--accent);border-color:transparent}
+.hint{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:box-shadow .15s}
+.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card.active{outline:2px solid var(--accent)}
+.card .n{font-size:26px;font-weight:700}
+.card .t{font-size:12.5px;color:var(--muted)}
+.card.c-safe .n{color:var(--ok)} .card.c-good .n{color:var(--maybe)}
+.card.c-edge .n{color:var(--warn)} .card.c-hard .n{color:var(--risk)}
+.card.c-none .n{color:var(--none)}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.controls input[type=search]{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--line);border-radius:9px;font-size:14px}
+.controls select{padding:9px 10px;border:1px solid var(--line);border-radius:9px;font-size:14px;background:#fff}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:13.5px}
+thead th{position:sticky;top:0;background:#f8fafc;border-bottom:1px solid var(--line);padding:10px 8px;font-size:12.5px;color:var(--muted);text-align:left;white-space:nowrap;cursor:pointer;user-select:none}
+thead th.sorted{color:var(--accent)}
+tbody td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:hover{background:#fafcff}
+.school{font-weight:600;white-space:nowrap}
+.school.public{color:#1d4ed8}
+.stag{display:inline-block;font-size:11px;font-weight:700;border-radius:5px;padding:1px 6px;margin-right:5px;vertical-align:1px}
+.stag.pub{color:#1d4ed8;background:#dbeafe}
+.stag.pri{color:#9333ea;background:#f3e8ff}
+.dept{color:var(--ink)}
+.wt{font-size:12px;color:var(--muted);white-space:nowrap}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.b-safe{color:var(--ok);background:var(--ok-bg)} .b-good{color:var(--maybe);background:var(--maybe-bg)}
+.b-edge{color:var(--warn);background:var(--warn-bg)} .b-hard{color:var(--risk);background:var(--risk-bg)}
+.b-none{color:var(--none);background:var(--none-bg)}
+.yr{display:flex;flex-direction:column;gap:3px;font-size:12px;white-space:nowrap}
+.yr .pass{color:var(--ok)} .yr .fail{color:var(--risk)} .yr .na{color:var(--muted)}
+.yr b{font-variant-numeric:tabular-nums}
+.margin-pos{color:var(--ok);font-weight:700} .margin-neg{color:var(--risk);font-weight:700}
+.tag{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 5px;margin-left:4px}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.star{border:none;background:none;font-size:20px;cursor:pointer;color:#cbd5e1;padding:2px 6px;line-height:1}
+.star.on{color:#f59e0b}
+.star:hover{transform:scale(1.15)}
+#wishPanel{border:2px solid #f59e0b33}
+.wish-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.wish-head h2{margin-bottom:0}
+.wish-head .sp{flex:1}
+.wish-head select{padding:6px 8px;border:1px solid var(--line);border-radius:8px;font-size:13px;background:#fff}
+.wish-head button{padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:13px;cursor:pointer;color:var(--muted)}
+.wish-head button:hover{border-color:var(--risk);color:var(--risk)}
+.wish-empty{color:var(--muted);font-size:13.5px;padding:14px 4px}
+.wish-list{display:flex;flex-direction:column;gap:6px}
+.wish-item{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;cursor:grab}
+.wish-item.dragging{opacity:.4}
+.wish-item.landing{border-color:var(--ok);background:var(--ok-bg)}
+.wish-item .ord{font-weight:700;font-size:15px;color:var(--accent);min-width:26px;text-align:center}
+.wish-item .who{flex:1;min-width:140px}
+.wish-item .who .s{font-weight:600;font-size:13.5px}
+.wish-item .who .d{font-size:12.5px;color:var(--muted)}
+.wish-item .yrs{display:flex;gap:8px;font-size:12px;white-space:nowrap}
+.wish-item .yrs span{font-variant-numeric:tabular-nums}
+.wish-item .tot{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wish-item .btns{display:flex;gap:2px}
+.wish-item .btns button{border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer;font-size:12px;padding:3px 7px;color:var(--muted)}
+.wish-item .btns button:hover{color:var(--accent);border-color:var(--accent)}
+.wish-item .btns button.rm:hover{color:var(--risk);border-color:var(--risk)}
+.land-tag{font-size:11.5px;font-weight:700;color:var(--ok);background:#fff;border:1px solid var(--ok);border-radius:999px;padding:2px 8px;white-space:nowrap}
+.sim-result{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px;font-size:13px;line-height:2}
+.sim-result b{color:var(--accent)}
+@media (max-width:800px){ .wish-item .yrs{display:none} }
+.foot{margin-top:18px;font-size:12px;color:var(--muted);line-height:1.9}
+@media (max-width:800px){ .wt{white-space:normal} thead th,tbody td{padding:8px 5px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📊 統測登記分發落點儀表板</h1>
+  <div class="sub">15 外語群英語類 · 115 學年度四技二專日間部聯合登記分發 · 共 <span id="totalDepts"></span> 個校系<br>
+  資料來源:技專校院招生委員會聯合會官方「各校系科組學程錄取總成績統計表」(112–114) 與 115 學年度招生簡章名額檔</div>
+
+  <div class="panel">
+    <h2>✏️ 輸入你的統測原始分數(各科 0–100)</h2>
+    <div class="scores">
+      <div class="score-field"><label>國文</label><input type="number" id="s-chinese" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>英文</label><input type="number" id="s-english" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>數學</label><input type="number" id="s-math" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>專業(一)</label><input type="number" id="s-pro1" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>專業(二)</label><input type="number" id="s-pro2" min="0" max="100" step="0.5" placeholder="0"></div>
+    </div>
+    <div class="hint">每個校系權重不同,系統會用「該系該年度的官方倍率」計算你的加權總分,再與該年最低錄取分數比較。分數會自動存在瀏覽器,下次打開不用重打。</div>
+  </div>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="panel" id="wishPanel">
+    <div class="wish-head">
+      <h2>⭐ 我的志願模擬排序 (<span id="wishCount">0</span>)</h2>
+      <div class="sp"></div>
+      <label style="font-size:13px;color:var(--muted)">落點模擬基準:
+        <select id="simYear"><option value="114">114 年</option><option value="113">113 年</option><option value="112">112 年</option></select>
+      </label>
+      <button id="wishClear">全部清除</button>
+    </div>
+    <div class="wish-empty" id="wishEmpty">還沒加入任何志願 — 在下方表格點 ☆ 星號就能收藏,拖曳或用 ↑↓ 調整順序,系統會模擬你會落在第幾志願。</div>
+    <div class="wish-list" id="wishList"></div>
+    <div class="sim-result" id="simResult" style="display:none"></div>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="🔍 搜尋學校或科系名稱…">
+    <select id="fType"><option value="">全部學校</option><option value="public">公立</option><option value="private">私立</option></select>
+    <select id="fSort">
+      <option value="margin">依 114 年安全差距排序</option>
+      <option value="cutoff">依 114 年錄取分數排序</option>
+      <option value="code">依志願代碼排序</option>
+    </select>
+  </div>
+
+  <table>
+    <thead><tr>
+      <th>⭐</th><th>判定</th><th>學校 / 科系</th><th>115 倍率</th>
+      <th class="num">115 名額</th><th class="num">我的加權總分<br>(115 倍率)</th>
+      <th>112 年</th><th>113 年</th><th>114 年</th>
+      <th class="num">vs 114 差距</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <div class="empty" id="empty" style="display:none">沒有符合條件的校系</div>
+
+  <div class="foot">
+    ⚠️ 注意事項:<br>
+    · 歷年比較是用「你的分數 × 該年度該系倍率」對比「該年最低錄取總分」,倍率若逐年調整已分別計算。<br>
+    · 每年統測難度不同、名額與報名人數會變動,歷年分數僅供落點參考,不保證錄取。<br>
+    · 「未足額」表示該年錄取人數少於招生名額(通常代表有登記就上),最低分參考價值較低。<br>
+    · 判定標準:穩上 = 三年皆超過最低分且對 114 年有 3% 以上緩衝;有機會 = 超過最近年度;邊緣 = 差距在 ±3% 內;困難 = 低於近年最低分。<br>
+    · 115 學年度實際招生名額將於 115.7.27 公告,請以委員會網站與正式簡章為準。
+  </div>
+</div>
+
+<script>
+const DATA = /*__DATA__*/;
+
+const SUBJECTS = ['chinese','english','math','pro1','pro2'];
+const SUBJ_ZH = {chinese:'國',english:'英',math:'數',pro1:'專一',pro2:'專二'};
+const $ = id => document.getElementById(id);
+
+function getScores(){
+  const s = {};
+  for (const k of SUBJECTS) s[k] = parseFloat($('s-'+k).value) || 0;
+  return s;
+}
+function weighted(scores, w){
+  let t = 0;
+  for (const k of SUBJECTS) t += scores[k] * (w[k] ?? 0);
+  return t;
+}
+function wtStr(w){
+  return SUBJECTS.map(k => SUBJ_ZH[k]+'×'+(+w[k]).toFixed(2).replace(/\.?0+$/,'')).join(' ');
+}
+function maxTotal(w){ return SUBJECTS.reduce((a,k)=>a+100*(w[k]??0),0); }
+function isPublic(school){ return school.startsWith('國立') || school.includes('市立'); }
+function schoolTag(school){
+  return isPublic(school)
+    ? '<span class="stag pub">公立</span>'
+    : '<span class="stag pri">私立</span>';
+}
+
+// classify: returns {cls,label,margin114pct}
+function classify(d, scores){
+  const years = ['112','113','114'];
+  const results = {};
+  let passCount = 0, dataCount = 0;
+  for (const y of years){
+    const h = d.history[y];
+    if (!h || h.cutoff == null){ results[y] = null; continue; }
+    const my = weighted(scores, h.weights);
+    const pass = my >= h.cutoff;
+    const underQuota = h.admitted != null && h.quota != null && h.admitted < h.quota;
+    results[y] = {my, cutoff: h.cutoff, pass, underQuota, admitted: h.admitted, quota: h.quota};
+    dataCount++; if (pass) passCount++;
+  }
+  // margin vs latest available year, as % of that year's max total
+  let latest = null;
+  for (const y of ['114','113','112']){ if (results[y]){ latest = {y, ...results[y], w: d.history[y].weights}; break; } }
+  let marginPct = null, marginAbs = null;
+  if (latest){
+    marginAbs = latest.my - latest.cutoff;
+    marginPct = marginAbs / maxTotal(latest.w) * 100;
+  }
+  let cls, label;
+  if (dataCount === 0){ cls='none'; label='無歷年資料'; }
+  else if (passCount === dataCount && marginPct >= 3){ cls='safe'; label='穩上'; }
+  else if (latest && latest.pass && marginPct >= 3){ cls='good'; label='有機會'; }
+  else if (marginPct != null && Math.abs(marginPct) < 3){ cls='edge'; label='邊緣'; }
+  else if (latest && latest.pass){ cls='good'; label='有機會'; }
+  else { cls='hard'; label='困難'; }
+  return {results, cls, label, marginAbs, marginPct, latestYear: latest ? latest.y : null};
+}
+
+function yrCell(r, h){
+  if (!h) return '<div class="yr"><span class="na">未招生</span></div>';
+  if (h.cutoff == null) return '<div class="yr"><span class="na">無錄取分數</span>'+(h.quota!=null?'<span class="na">名額 '+h.quota+'</span>':'')+'</div>';
+  const icon = r.pass ? '<span class="pass">✓ 過</span>' : '<span class="fail">✗ 未過</span>';
+  const uq = r.underQuota ? '<span class="tag">未足額</span>' : '';
+  return '<div class="yr">'
+    + '<span>最低 <b>'+h.cutoff.toFixed(2).replace(/\.?0+$/,'')+'</b>'+uq+'</span>'
+    + '<span>我的 <b>'+r.my.toFixed(1)+'</b> '+icon+'</span>'
+    + '<span class="na">'+(h.admitted??'--')+'/'+(h.quota??'--')+' 人</span>'
+    + '</div>';
+}
+
+let activeFilter = '';
+
+function render(){
+  const scores = getScores();
+  const hasScores = SUBJECTS.some(k => scores[k] > 0);
+  const q = $('q').value.trim().toLowerCase();
+  const ft = $('fType').value;
+  const sort = $('fSort').value;
+
+  const enriched = DATA.map(d => {
+    const c = classify(d, scores);
+    return {d, c, my115: weighted(scores, d.weights)};
+  });
+
+  // summary cards
+  const counts = {safe:0,good:0,edge:0,hard:0,none:0};
+  for (const e of enriched) counts[e.c.cls]++;
+  const cardDefs = [
+    ['', '全部', DATA.length, ''],
+    ['safe','🟢 穩上',counts.safe,'c-safe'],
+    ['good','🔵 有機會',counts.good,'c-good'],
+    ['edge','🟡 邊緣',counts.edge,'c-edge'],
+    ['hard','🔴 困難',counts.hard,'c-hard'],
+    ['none','⚪ 無歷年資料',counts.none,'c-none'],
+  ];
+  $('cards').innerHTML = cardDefs.map(([k,t,n,cc]) =>
+    '<div class="card '+cc+(activeFilter===k?' active':'')+'" data-f="'+k+'"><div class="n">'+(hasScores||k===''||k==='none'?n:'–')+'</div><div class="t">'+t+'</div></div>'
+  ).join('');
+  document.querySelectorAll('.card').forEach(el => el.onclick = () => {
+    activeFilter = (activeFilter === el.dataset.f) ? '' : el.dataset.f; render();
+  });
+
+  let list = enriched.filter(e => {
+    if (activeFilter && e.c.cls !== activeFilter) return false;
+    if (ft === 'public' && !isPublic(e.d.school)) return false;
+    if (ft === 'private' && isPublic(e.d.school)) return false;
+    if (q && !(e.d.school+e.d.dept).toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  list.sort((a,b) => {
+    if (sort === 'code') return a.d.code.localeCompare(b.d.code);
+    if (sort === 'cutoff'){
+      const ca = a.d.history['114'] ? a.d.history['114'].cutoff : null;
+      const cb = b.d.history['114'] ? b.d.history['114'].cutoff : null;
+      return (cb ?? -1) - (ca ?? -1);
+    }
+    return (b.c.marginPct ?? -999) - (a.c.marginPct ?? -999);
+  });
+
+  $('rows').innerHTML = list.map(e => {
+    const {d, c} = e;
+    const pub = isPublic(d.school);
+    const m = c.marginAbs;
+    const marginHtml = m == null ? '<span class="na" style="color:var(--muted)">--</span>'
+      : '<span class="'+(m>=0?'margin-pos':'margin-neg')+'">'+(m>=0?'+':'')+m.toFixed(1)+'</span>';
+    const starred = wish.includes(d.code);
+    return '<tr>'
+      + '<td><button class="star'+(starred?' on':'')+'" data-code="'+d.code+'" title="加入/移出志願清單">'+(starred?'★':'☆')+'</button></td>'
+      + '<td><span class="badge b-'+c.cls+'">'+c.label+'</span></td>'
+      + '<td><div class="school'+(pub?' public':'')+'">'+schoolTag(d.school)+d.school+'</div><div class="dept">'+d.dept+'</div><div class="wt" style="color:#94a3b8">代碼 '+d.code+'</div></td>'
+      + '<td class="wt">'+wtStr(d.weights)+'<br><span style="color:#94a3b8">滿分 '+maxTotal(d.weights)+'</span></td>'
+      + '<td class="num">'+(d.quota ?? '--')+'</td>'
+      + '<td class="num"><b>'+e.my115.toFixed(1)+'</b></td>'
+      + '<td>'+yrCell(c.results['112'], d.history['112'])+'</td>'
+      + '<td>'+yrCell(c.results['113'], d.history['113'])+'</td>'
+      + '<td>'+yrCell(c.results['114'], d.history['114'])+'</td>'
+      + '<td class="num">'+marginHtml+(c.latestYear&&c.latestYear!=='114'?'<div class="wt">(對 '+c.latestYear+' 年)</div>':'')+'</td>'
+      + '</tr>';
+  }).join('');
+  $('empty').style.display = list.length ? 'none' : 'block';
+  renderWish(scores);
+}
+
+// ---------- 志願清單模擬 ----------
+const byCode = Object.fromEntries(DATA.map(d => [d.code, d]));
+let wish = [];
+try { wish = (JSON.parse(localStorage.getItem('tsWish') || '[]')).filter(c => byCode[c]); } catch(e){}
+function saveWish(){ localStorage.setItem('tsWish', JSON.stringify(wish)); }
+function toggleWish(code){
+  const i = wish.indexOf(code);
+  if (i >= 0) wish.splice(i, 1); else wish.push(code);
+  saveWish(); render();
+}
+function moveWish(i, dir){
+  const j = i + dir;
+  if (j < 0 || j >= wish.length) return;
+  [wish[i], wish[j]] = [wish[j], wish[i]];
+  saveWish(); render();
+}
+
+function renderWish(scores){
+  const simYear = $('simYear').value;
+  $('wishCount').textContent = wish.length;
+  $('wishEmpty').style.display = wish.length ? 'none' : 'block';
+
+  // 落點:由第 1 志願往下,找到第一個「該基準年有錄取分數且我的加權總分達標」的志願
+  let landIdx = -1, unknown = 0;
+  for (let i = 0; i < wish.length; i++){
+    const h = byCode[wish[i]].history[simYear];
+    if (!h || h.cutoff == null){ unknown++; continue; }
+    if (weighted(scores, h.weights) >= h.cutoff){ landIdx = i; break; }
+  }
+
+  $('wishList').innerHTML = wish.map((code, i) => {
+    const d = byCode[code];
+    const yrs = ['112','113','114'].map(y => {
+      const h = d.history[y];
+      if (!h || h.cutoff == null) return '<span class="na" style="color:var(--muted)">'+y+' --</span>';
+      const pass = weighted(scores, h.weights) >= h.cutoff;
+      return '<span class="'+(pass?'pass':'fail')+'" style="color:var(--'+(pass?'ok':'risk')+')">'+y+' '+(pass?'✓':'✗')+'</span>';
+    }).join('');
+    return '<div class="wish-item'+(i===landIdx?' landing':'')+'" draggable="true" data-i="'+i+'">'
+      + '<div class="ord">'+(i+1)+'</div>'
+      + '<div class="who"><div class="s">'+schoolTag(d.school)+d.school+'</div><div class="d">'+d.dept+' <span style="color:#94a3b8">('+d.code+')</span></div></div>'
+      + (i===landIdx ? '<span class="land-tag">🎯 預估落點</span>' : '')
+      + '<div class="yrs">'+yrs+'</div>'
+      + '<div class="tot">'+weighted(scores, d.weights).toFixed(1)+'</div>'
+      + '<div class="btns">'
+      +   '<button data-act="up" data-i="'+i+'" title="上移">↑</button>'
+      +   '<button data-act="down" data-i="'+i+'" title="下移">↓</button>'
+      +   '<button class="rm" data-act="rm" data-i="'+i+'" title="移除">✕</button>'
+      + '</div></div>';
+  }).join('');
+
+  const sim = $('simResult');
+  if (!wish.length){ sim.style.display = 'none'; }
+  else {
+    sim.style.display = 'block';
+    const hasScores = SUBJECTS.some(k => scores[k] > 0);
+    let msg;
+    if (!hasScores) msg = '請先在上方輸入成績,才能模擬落點。';
+    else if (landIdx >= 0){
+      const d = byCode[wish[landIdx]];
+      msg = '以 <b>'+simYear+' 年</b>各系最低錄取分數模擬:你會錄取 <b>第 '+(landIdx+1)+' 志願 — '+d.school+' '+d.dept+'</b>'
+        + '(前面 '+landIdx+' 個志願未達該年最低分)。';
+    } else {
+      msg = '以 <b>'+simYear+' 年</b>標準模擬:清單中的志願皆未達最低錄取分數。';
+    }
+    if (unknown > 0) msg += '<br><span style="color:var(--muted)">※ 有 '+unknown+' 個志願在 '+simYear+' 年無錄取分數可比對(新設系或該年未招滿),模擬時已略過,實際分發時它們仍可能錄取你。</span>';
+    msg += '<br><span style="color:var(--muted)">※ 分發規則:由第 1 志願往下,錄取第一個達到門檻的志願。實際結果取決於當年考生分數與名額,此為歷年參考。</span>';
+    sim.innerHTML = msg;
+  }
+}
+
+// star buttons (event delegation on table body)
+$('rows').addEventListener('click', e => {
+  const btn = e.target.closest('.star');
+  if (btn) toggleWish(btn.dataset.code);
+});
+// wishlist buttons
+$('wishList').addEventListener('click', e => {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  const i = +btn.dataset.i;
+  if (btn.dataset.act === 'up') moveWish(i, -1);
+  else if (btn.dataset.act === 'down') moveWish(i, 1);
+  else if (btn.dataset.act === 'rm'){ wish.splice(i, 1); saveWish(); render(); }
+});
+// drag & drop reorder
+let dragIdx = null;
+$('wishList').addEventListener('dragstart', e => {
+  const it = e.target.closest('.wish-item');
+  if (!it) return;
+  dragIdx = +it.dataset.i;
+  it.classList.add('dragging');
+});
+$('wishList').addEventListener('dragover', e => e.preventDefault());
+$('wishList').addEventListener('drop', e => {
+  e.preventDefault();
+  const it = e.target.closest('.wish-item');
+  if (it == null || dragIdx == null) return;
+  const to = +it.dataset.i;
+  if (to !== dragIdx){
+    const [m] = wish.splice(dragIdx, 1);
+    wish.splice(to, 0, m);
+    saveWish(); render();
+  }
+  dragIdx = null;
+});
+$('wishList').addEventListener('dragend', e => {
+  document.querySelectorAll('.wish-item.dragging').forEach(el => el.classList.remove('dragging'));
+  dragIdx = null;
+});
+$('wishClear').addEventListener('click', () => {
+  if (wish.length && confirm('確定要清空志願清單?')){ wish = []; saveWish(); render(); }
+});
+$('simYear').addEventListener('change', render);
+
+// persistence
+function save(){ localStorage.setItem('tsScores', JSON.stringify(getScores())); }
+function load(){
+  try{
+    const s = JSON.parse(localStorage.getItem('tsScores') || '{}');
+    for (const k of SUBJECTS) if (s[k]) $('s-'+k).value = s[k];
+  }catch(e){}
+}
+
+$('totalDepts').textContent = DATA.length;
+load();
+for (const k of SUBJECTS) $('s-'+k).addEventListener('input', () => { save(); render(); });
+$('q').addEventListener('input', render);
+$('fType').addEventListener('change', render);
+$('fSort').addEventListener('change', render);
+render();
+</script>
+</body>
+</html>

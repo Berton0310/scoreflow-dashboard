@@ -1,0 +1,6475 @@
+[
+ {
+  "code": "15001",
+  "school": "國立臺灣科技大學",
+  "dept": "應用外語系",
+  "quota": 15,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 13.0,
+    "admitted": 13.0,
+    "cutoff": 790.0,
+    "tiebreak": 90.0
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 16.0,
+    "admitted": 16.0,
+    "cutoff": 763.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 17.0,
+    "admitted": 17.0,
+    "cutoff": 758.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15002",
+  "school": "國立臺灣科技大學",
+  "dept": "企業管理系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 620.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 626.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 638.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15003",
+  "school": "國立雲林科技大學",
+  "dept": "應用外語系",
+  "quota": 20,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 22.0,
+    "admitted": 22.0,
+    "cutoff": 838.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 10.0,
+    "cutoff": 882.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 18.0,
+    "admitted": 18.0,
+    "cutoff": 822.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15004",
+  "school": "國立雲林科技大學",
+  "dept": "財務金融系",
+  "quota": 6,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 2.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 921.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 8.0,
+    "admitted": 8.0,
+    "cutoff": 888.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 846.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15005",
+  "school": "國立雲林科技大學",
+  "dept": "企業管理系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 725.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 718.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 710.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15006",
+  "school": "國立雲林科技大學",
+  "dept": "國際管理學士學位學程",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 745.25,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 727.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 688.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15007",
+  "school": "國立屏東科技大學",
+  "dept": "財務金融國際學士學位學程",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 600.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 606.75,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15008",
+  "school": "國立屏東科技大學",
+  "dept": "應用外語系",
+  "quota": 7,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 24.0,
+    "admitted": 24.0,
+    "cutoff": 551.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 32.0,
+    "admitted": 28.0,
+    "cutoff": 281.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 13.0,
+    "admitted": 13.0,
+    "cutoff": 485.0,
+    "tiebreak": 52.0
+   }
+  }
+ },
+ {
+  "code": "15009",
+  "school": "國立屏東科技大學",
+  "dept": "休閒運動健康系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 411.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 3.0,
+    "cutoff": 300.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 8.0,
+    "admitted": 8.0,
+    "cutoff": 325.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15010",
+  "school": "國立屏東科技大學",
+  "dept": "熱帶農業暨國際合作系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {}
+ },
+ {
+  "code": "15011",
+  "school": "國立臺北科技大學",
+  "dept": "應用英文系",
+  "quota": 11,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 18.0,
+    "admitted": 18.0,
+    "cutoff": 744.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 19.0,
+    "admitted": 19.0,
+    "cutoff": 739.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 13.0,
+    "admitted": 13.0,
+    "cutoff": 753.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15012",
+  "school": "國立高雄科技大學",
+  "dept": "國際企業系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 8.0,
+    "admitted": 8.0,
+    "cutoff": 672.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 8.0,
+    "admitted": 8.0,
+    "cutoff": 635.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 666.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15013",
+  "school": "國立高雄科技大學",
+  "dept": "企業管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 585.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.5
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 549.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.5
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 596.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15014",
+  "school": "國立高雄科技大學",
+  "dept": "運籌管理系",
+  "quota": 5,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 2.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 804.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 800.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 782.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15015",
+  "school": "國立高雄科技大學",
+  "dept": "行銷與流通管理系",
+  "quota": 13,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 16.0,
+    "admitted": 16.0,
+    "cutoff": 489.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 17.0,
+    "admitted": 17.0,
+    "cutoff": 467.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 13.0,
+    "admitted": 13.0,
+    "cutoff": 476.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15016",
+  "school": "國立高雄科技大學",
+  "dept": "金融系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 2.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 2.5
+    },
+    "quota": 14.0,
+    "admitted": 14.0,
+    "cutoff": 682.75,
+    "tiebreak": 76.0
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 14.0,
+    "admitted": 14.0,
+    "cutoff": 783.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 810.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15017",
+  "school": "國立高雄科技大學",
+  "dept": "財務管理系",
+  "quota": 6,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 2.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 2.0,
+     "math": 1.5,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 794.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 651.13,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 2.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 631.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15018",
+  "school": "國立高雄科技大學",
+  "dept": "人力資源發展系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 8.0,
+    "admitted": 8.0,
+    "cutoff": 453.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 456.75,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 451.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15019",
+  "school": "國立高雄科技大學",
+  "dept": "會計資訊系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 695.25,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.25,
+     "pro1": 2.0,
+     "pro2": 2.25
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 491.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.25,
+     "pro1": 2.0,
+     "pro2": 2.25
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 479.63,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15020",
+  "school": "國立高雄科技大學",
+  "dept": "金融資訊系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 2.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 734.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 769.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15021",
+  "school": "國立高雄科技大學",
+  "dept": "財政稅務系",
+  "quota": 5,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 2.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {}
+ },
+ {
+  "code": "15022",
+  "school": "國立高雄科技大學",
+  "dept": "觀光管理系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.5,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 710.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 785.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 714.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15023",
+  "school": "國立高雄科技大學",
+  "dept": "航運管理系",
+  "quota": 9,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 18.0,
+    "admitted": 18.0,
+    "cutoff": 677.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 12.0,
+    "admitted": 12.0,
+    "cutoff": 710.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 12.0,
+    "admitted": 12.0,
+    "cutoff": 683.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15024",
+  "school": "國立高雄科技大學",
+  "dept": "應用英語系",
+  "quota": 8,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 20.0,
+    "admitted": 20.0,
+    "cutoff": 654.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 20.0,
+    "admitted": 20.0,
+    "cutoff": 663.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 26.0,
+    "admitted": 26.0,
+    "cutoff": 607.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15025",
+  "school": "國立高雄科技大學",
+  "dept": "應用德語系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 646.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 634.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 12.0,
+    "admitted": 12.0,
+    "cutoff": 595.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15026",
+  "school": "國立高雄科技大學",
+  "dept": "漁業科技與管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 424.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 401.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 427.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15027",
+  "school": "國立高雄科技大學",
+  "dept": "高瞻科技不分系學士學位學程",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.25,
+   "pro2": 3.0
+  },
+  "history": {}
+ },
+ {
+  "code": "15028",
+  "school": "國立虎尾科技大學",
+  "dept": "企業管理系",
+  "quota": 5,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 474.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 14.0,
+    "admitted": 14.0,
+    "cutoff": 437.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 11.0,
+    "admitted": 11.0,
+    "cutoff": 447.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15029",
+  "school": "國立虎尾科技大學",
+  "dept": "應用外語系",
+  "quota": 12,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 31.0,
+    "admitted": 31.0,
+    "cutoff": 445.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 28.0,
+    "admitted": 28.0,
+    "cutoff": 603.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 32.0,
+    "admitted": 32.0,
+    "cutoff": 560.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15030",
+  "school": "國立澎湖科技大學",
+  "dept": "行銷與物流管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 2.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 612.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 478.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15031",
+  "school": "國立澎湖科技大學",
+  "dept": "航運管理系",
+  "quota": 5,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 594.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 487.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 6.0,
+    "cutoff": 336.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15032",
+  "school": "國立澎湖科技大學",
+  "dept": "應用外語系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 16.0,
+    "admitted": 10.0,
+    "cutoff": 331.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 8.0,
+    "admitted": 3.0,
+    "cutoff": 425.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 360.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15033",
+  "school": "國立勤益科技大學",
+  "dept": "企業管理系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.5,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 500.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 500.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.5
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 548.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15034",
+  "school": "國立勤益科技大學",
+  "dept": "應用英語系",
+  "quota": 12,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 32.0,
+    "admitted": 32.0,
+    "cutoff": 605.5,
+    "tiebreak": 78.5
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 25.0,
+    "admitted": 25.0,
+    "cutoff": 624.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 19.0,
+    "admitted": 19.0,
+    "cutoff": 608.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15035",
+  "school": "國立勤益科技大學",
+  "dept": "文化創意事業系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 479.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 456.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 461.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15036",
+  "school": "國立臺北護理健康大學",
+  "dept": "休閒產業與健康促進系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 666.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 664.75,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 655.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15037",
+  "school": "國立臺北護理健康大學",
+  "dept": "語言治療與聽力學系",
+  "quota": 12,
+  "weights": {
+   "chinese": 1.75,
+   "english": 1.25,
+   "math": 1.75,
+   "pro1": 3.0,
+   "pro2": 2.75
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.75,
+     "english": 1.25,
+     "math": 1.75,
+     "pro1": 3.0,
+     "pro2": 2.75
+    },
+    "quota": 16.0,
+    "admitted": 16.0,
+    "cutoff": 828.88,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.75,
+     "english": 1.25,
+     "math": 1.75,
+     "pro1": 3.0,
+     "pro2": 2.75
+    },
+    "quota": 19.0,
+    "admitted": 19.0,
+    "cutoff": 792.63,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.75,
+     "english": 1.25,
+     "math": 1.75,
+     "pro1": 3.0,
+     "pro2": 2.75
+    },
+    "quota": 12.0,
+    "admitted": 12.0,
+    "cutoff": 799.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15038",
+  "school": "國立臺北護理健康大學",
+  "dept": "運動保健系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 8.0,
+    "admitted": 8.0,
+    "cutoff": 652.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 9.0,
+    "admitted": 9.0,
+    "cutoff": 660.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 661.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15039",
+  "school": "國立臺北護理健康大學",
+  "dept": "生死與健康心理諮商系",
+  "quota": 7,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 9.0,
+    "admitted": 9.0,
+    "cutoff": 681.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 10.0,
+    "admitted": 10.0,
+    "cutoff": 681.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 15.0,
+    "admitted": 15.0,
+    "cutoff": 662.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15040",
+  "school": "國立高雄餐旅大學",
+  "dept": "旅館管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 571.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15041",
+  "school": "國立高雄餐旅大學",
+  "dept": "餐飲管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 590.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 403.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 453.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15042",
+  "school": "國立高雄餐旅大學",
+  "dept": "餐旅暨會展行銷管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 590.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 362.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 429.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15043",
+  "school": "國立高雄餐旅大學",
+  "dept": "航空暨運輸服務管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 512.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15044",
+  "school": "國立高雄餐旅大學",
+  "dept": "應用英語系",
+  "quota": 5,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 24.0,
+    "admitted": 24.0,
+    "cutoff": 555.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 24.0,
+    "admitted": 24.0,
+    "cutoff": 410.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 22.0,
+    "admitted": 22.0,
+    "cutoff": 519.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15045",
+  "school": "國立臺中科技大學",
+  "dept": "國際貿易與經營系",
+  "quota": 10,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 10.0,
+    "cutoff": 680.0,
+    "tiebreak": 81.0
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 8.0,
+    "admitted": 8.0,
+    "cutoff": 698.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 10.0,
+    "cutoff": 687.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15046",
+  "school": "國立臺中科技大學",
+  "dept": "財政稅務系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 691.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 681.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15047",
+  "school": "國立臺中科技大學",
+  "dept": "保險金融管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 805.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 830.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 830.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15048",
+  "school": "國立臺中科技大學",
+  "dept": "企業管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 809.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 856.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 873.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15049",
+  "school": "國立臺中科技大學",
+  "dept": "應用英語系",
+  "quota": 2,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 3.0
+    },
+    "quota": 13.0,
+    "admitted": 13.0,
+    "cutoff": 700.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 13.0,
+    "admitted": 13.0,
+    "cutoff": 830.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 836.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15050",
+  "school": "國立臺中科技大學",
+  "dept": "應用中文系",
+  "quota": 3,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 617.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 646.75,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 611.75,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15051",
+  "school": "國立臺北商業大學",
+  "dept": "國際商務系（臺北校區）",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 575.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 572.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 577.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15052",
+  "school": "國立臺北商業大學",
+  "dept": "應用外語系（臺北校區）",
+  "quota": 9,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.5
+    },
+    "quota": 15.0,
+    "admitted": 15.0,
+    "cutoff": 752.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.5
+    },
+    "quota": 16.0,
+    "admitted": 16.0,
+    "cutoff": 741.75,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.5
+    },
+    "quota": 18.0,
+    "admitted": 18.0,
+    "cutoff": 755.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15053",
+  "school": "朝陽科技大學",
+  "dept": "企業管理系",
+  "quota": 4,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 411.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 460.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 517.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15054",
+  "school": "朝陽科技大學",
+  "dept": "會計系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 388.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 318.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 344.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15055",
+  "school": "朝陽科技大學",
+  "dept": "休閒事業管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 9.0,
+    "admitted": 9.0,
+    "cutoff": 389.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 368.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 9.0,
+    "admitted": 9.0,
+    "cutoff": 361.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15056",
+  "school": "朝陽科技大學",
+  "dept": "行銷與流通管理系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 415.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 9.0,
+    "admitted": 9.0,
+    "cutoff": 373.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 422.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15057",
+  "school": "朝陽科技大學",
+  "dept": "應用英語系",
+  "quota": 16,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 36.0,
+    "admitted": 36.0,
+    "cutoff": 488.0,
+    "tiebreak": 50.0
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 35.0,
+    "admitted": 35.0,
+    "cutoff": 380.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 26.0,
+    "admitted": 26.0,
+    "cutoff": 484.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15058",
+  "school": "朝陽科技大學",
+  "dept": "飛行與民航人員技術系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {}
+ },
+ {
+  "code": "15059",
+  "school": "朝陽科技大學",
+  "dept": "航空運務系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 451.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 422.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 457.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15060",
+  "school": "南臺科技大學",
+  "dept": "企業管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.5,
+   "math": 1.5,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 355.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 1.0,
+    "cutoff": 388.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 465.75,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15061",
+  "school": "南臺科技大學",
+  "dept": "休閒事業管理系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 374.25,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 5.0,
+    "admitted": 2.0,
+    "cutoff": 236.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 435.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15062",
+  "school": "南臺科技大學",
+  "dept": "國際企業系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.0
+    },
+    "quota": 13.0,
+    "admitted": 4.0,
+    "cutoff": 283.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 8.0,
+    "admitted": 5.0,
+    "cutoff": 337.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 361.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15063",
+  "school": "南臺科技大學",
+  "dept": "財務金融系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.5,
+   "math": 1.5,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 467.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 2.0,
+    "cutoff": 469.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 307.75,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15064",
+  "school": "嘉藥學校財團法人嘉南藥理大學",
+  "dept": "嬰幼兒保育系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 1.0,
+    "cutoff": 153.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 1.0,
+    "cutoff": 289.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15065",
+  "school": "龍華科技大學",
+  "dept": "數位行銷暨跨境商務系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 11.0,
+    "admitted": 3.0,
+    "cutoff": 212.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 9.0,
+    "admitted": 3.0,
+    "cutoff": 511.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 517.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15066",
+  "school": "龍華科技大學",
+  "dept": "應用外語系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 11.0,
+    "admitted": 8.0,
+    "cutoff": 179.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 24.0,
+    "admitted": 1.0,
+    "cutoff": 770.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 445.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15067",
+  "school": "龍華科技大學",
+  "dept": "觀光休閒系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 673.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15068",
+  "school": "龍華科技大學",
+  "dept": "財務金融系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 8.0,
+    "admitted": 4.0,
+    "cutoff": 235.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 4.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 610.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15069",
+  "school": "輔英科技大學",
+  "dept": "物理治療系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 309.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 394.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 355.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15070",
+  "school": "輔英科技大學",
+  "dept": "健康事業管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15071",
+  "school": "明新科技大學",
+  "dept": "財務金融系創意行銷組",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 536.25,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 663.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 360.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15072",
+  "school": "明新科技大學",
+  "dept": "旅館管理與廚藝創意系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 2.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 1.0,
+    "cutoff": 374.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 370.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 2.0,
+    "cutoff": 289.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15073",
+  "school": "明新科技大學",
+  "dept": "幼兒保育系",
+  "quota": 2,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 2.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 4.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 4.0,
+    "admitted": 2.0,
+    "cutoff": 214.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 1.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15074",
+  "school": "明新科技大學",
+  "dept": "國際商務外語系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 12.0,
+    "admitted": 1.0,
+    "cutoff": 341.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 4.0,
+    "cutoff": 196.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15075",
+  "school": "弘光科技大學",
+  "dept": "物理治療系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 446.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 446.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 455.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15076",
+  "school": "弘光科技大學",
+  "dept": "語言治療與聽力學系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 449.25,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 478.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 409.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15077",
+  "school": "弘光科技大學",
+  "dept": "幼兒保育系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 343.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 5.0,
+    "cutoff": 148.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 333.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15078",
+  "school": "弘光科技大學",
+  "dept": "國際溝通英語系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 9.0,
+    "admitted": 9.0,
+    "cutoff": 335.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 15.0,
+    "admitted": 7.0,
+    "cutoff": 269.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 14.0,
+    "admitted": 14.0,
+    "cutoff": 257.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15079",
+  "school": "健行科技大學",
+  "dept": "國際企業經營系航空行銷組",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 1.0,
+    "cutoff": 316.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 1.0,
+    "cutoff": 386.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 339.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15080",
+  "school": "健行科技大學",
+  "dept": "應用外語系英語組",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 320.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 10.0,
+    "admitted": 2.0,
+    "cutoff": 331.75,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 2.0,
+    "cutoff": 189.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15081",
+  "school": "萬能科技大學",
+  "dept": "觀光與休閒事業管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 308.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 412.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 378.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15082",
+  "school": "萬能科技大學",
+  "dept": "餐飲管理系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15083",
+  "school": "萬能科技大學",
+  "dept": "航空暨運輸服務管理系",
+  "quota": 6,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 177.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 8.0,
+    "admitted": 3.0,
+    "cutoff": 203.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 11.0,
+    "admitted": 4.0,
+    "cutoff": 290.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15084",
+  "school": "萬能科技大學",
+  "dept": "企業管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 1.0,
+    "cutoff": 502.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15085",
+  "school": "建國科技大學",
+  "dept": "經營管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {}
+ },
+ {
+  "code": "15086",
+  "school": "明志科技大學",
+  "dept": "經營管理系",
+  "quota": 3,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 10.0,
+    "cutoff": 559.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 546.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 597.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15087",
+  "school": "台鋼科技大學",
+  "dept": "資訊傳播與行銷系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {}
+ },
+ {
+  "code": "15088",
+  "school": "嶺東科技大學",
+  "dept": "應用外語系應用英語組",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.5,
+   "english": 1.5,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 16.0,
+    "admitted": 11.0,
+    "cutoff": 335.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 12.0,
+    "admitted": 5.0,
+    "cutoff": 278.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 239.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15089",
+  "school": "嶺東科技大學",
+  "dept": "國際企業系",
+  "quota": 2,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 12.0,
+    "admitted": 8.0,
+    "cutoff": 352.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 15.0,
+    "admitted": 4.0,
+    "cutoff": 318.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 12.0,
+    "admitted": 8.0,
+    "cutoff": 357.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15090",
+  "school": "嶺東科技大學",
+  "dept": "行銷與流通管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 16.0,
+    "admitted": 16.0,
+    "cutoff": 336.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 12.0,
+    "admitted": 3.0,
+    "cutoff": 348.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.0
+    },
+    "quota": 8.0,
+    "admitted": 5.0,
+    "cutoff": 291.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15091",
+  "school": "嶺東科技大學",
+  "dept": "觀光與休閒管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.5,
+   "math": 1.5,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {}
+ },
+ {
+  "code": "15092",
+  "school": "中國科技大學",
+  "dept": "企業管理系（臺北校區）",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 1.0,
+    "cutoff": 590.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 455.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15093",
+  "school": "台南應用科技大學",
+  "dept": "應用英語系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 17.0,
+    "admitted": 6.0,
+    "cutoff": 251.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 12.0,
+    "admitted": 2.0,
+    "cutoff": 279.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 13.0,
+    "admitted": 6.0,
+    "cutoff": 250.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15094",
+  "school": "景文科技大學",
+  "dept": "應用外語系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 2.0,
+    "cutoff": 292.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15095",
+  "school": "景文科技大學",
+  "dept": "旅館管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 2.0,
+    "cutoff": 293.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15096",
+  "school": "中華醫事科技大學",
+  "dept": "語言治療系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 11.0,
+    "admitted": 9.0,
+    "cutoff": 449.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 266.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 3.0,
+    "cutoff": 280.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15097",
+  "school": "德明財經科技大學",
+  "dept": "財政稅務系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15098",
+  "school": "德明財經科技大學",
+  "dept": "財務金融系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 17.0,
+    "admitted": 6.0,
+    "cutoff": 324.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 230.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 3.0,
+    "cutoff": 312.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15099",
+  "school": "德明財經科技大學",
+  "dept": "行銷管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 15.0,
+    "admitted": 9.0,
+    "cutoff": 309.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 3.0,
+    "cutoff": 409.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15100",
+  "school": "德明財經科技大學",
+  "dept": "行銷管理系觀光與會展組",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 4.0,
+    "admitted": 3.0,
+    "cutoff": 301.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15101",
+  "school": "德明財經科技大學",
+  "dept": "國際貿易系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.5,
+   "english": 1.5,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 28.0,
+    "admitted": 14.0,
+    "cutoff": 314.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 15.0,
+    "admitted": 2.0,
+    "cutoff": 326.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 4.0,
+    "cutoff": 305.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15102",
+  "school": "德明財經科技大學",
+  "dept": "應用外語系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.25,
+     "pro2": 3.0
+    },
+    "quota": 22.0,
+    "admitted": 12.0,
+    "cutoff": 306.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 16.0,
+    "admitted": 4.0,
+    "cutoff": 388.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 9.0,
+    "admitted": 4.0,
+    "cutoff": 431.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15103",
+  "school": "南開科技大學",
+  "dept": "行銷與流通管理系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.5,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {}
+ },
+ {
+  "code": "15104",
+  "school": "僑光科技大學",
+  "dept": "國際貿易系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 12.0,
+    "admitted": 2.0,
+    "cutoff": 422.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 6.0,
+    "cutoff": 375.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15105",
+  "school": "僑光科技大學",
+  "dept": "財經法律系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.5,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 532.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 449.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 4.0,
+    "cutoff": 340.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15106",
+  "school": "僑光科技大學",
+  "dept": "應用外語系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 17.0,
+    "admitted": 5.0,
+    "cutoff": 257.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 13.0,
+    "admitted": 5.0,
+    "cutoff": 324.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 12.0,
+    "admitted": 11.0,
+    "cutoff": 260.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15107",
+  "school": "長庚學校財團法人長庚科技大學",
+  "dept": "護理系（林口校區）",
+  "quota": 16,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 9.0,
+    "admitted": 8.0,
+    "cutoff": 174.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15108",
+  "school": "長庚學校財團法人長庚科技大學",
+  "dept": "幼兒保育系（林口校區）",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 420.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 412.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 388.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15109",
+  "school": "長庚學校財團法人長庚科技大學",
+  "dept": "護理系（嘉義校區）",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 4.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15110",
+  "school": "臺北城市科技大學",
+  "dept": "應用外語系",
+  "quota": 1,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.25,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.25,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 8.0,
+    "admitted": 1.0,
+    "cutoff": 497.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.25,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 8.0,
+    "admitted": 2.0,
+    "cutoff": 552.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.25,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 14.0,
+    "admitted": 12.0,
+    "cutoff": 204.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15111",
+  "school": "臺北城市科技大學",
+  "dept": "觀光事業系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 10.0,
+    "admitted": 10.0,
+    "cutoff": 201.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 224.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 257.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15112",
+  "school": "醒吾科技大學",
+  "dept": "國際商務系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 10.0,
+    "admitted": 3.0,
+    "cutoff": 221.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 2.0,
+    "cutoff": 215.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 10.0,
+    "admitted": 3.0,
+    "cutoff": 290.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15113",
+  "school": "醒吾科技大學",
+  "dept": "旅運管理系航空服務管理組",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 282.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 289.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15114",
+  "school": "文藻外語大學",
+  "dept": "英國語文系",
+  "quota": 11,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.25,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.5
+    },
+    "quota": 32.0,
+    "admitted": 20.0,
+    "cutoff": 214.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 20.0,
+    "admitted": 14.0,
+    "cutoff": 176.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 24.0,
+    "admitted": 24.0,
+    "cutoff": 252.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15115",
+  "school": "文藻外語大學",
+  "dept": "法國語文系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 19.0,
+    "admitted": 4.0,
+    "cutoff": 236.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 11.0,
+    "admitted": 3.0,
+    "cutoff": 279.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 2.0,
+    "cutoff": 249.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15116",
+  "school": "文藻外語大學",
+  "dept": "德國語文系",
+  "quota": 5,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 9.0,
+    "admitted": 8.0,
+    "cutoff": 292.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 10.0,
+    "admitted": 5.0,
+    "cutoff": 285.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 9.0,
+    "admitted": 4.0,
+    "cutoff": 364.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15117",
+  "school": "文藻外語大學",
+  "dept": "西班牙語文系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 20.0,
+    "admitted": 9.0,
+    "cutoff": 303.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 364.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 364.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15118",
+  "school": "文藻外語大學",
+  "dept": "應用華語文系",
+  "quota": 3,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 5.0,
+    "cutoff": 255.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 1.0,
+    "cutoff": 462.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 3.0,
+    "cutoff": 249.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15119",
+  "school": "文藻外語大學",
+  "dept": "外語教學系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 17.0,
+    "admitted": 8.0,
+    "cutoff": 488.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 10.0,
+    "admitted": 7.0,
+    "cutoff": 307.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 266.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15120",
+  "school": "文藻外語大學",
+  "dept": "翻譯系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.75,
+     "english": 1.75,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 13.0,
+    "admitted": 8.0,
+    "cutoff": 412.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.75,
+     "english": 1.75,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 5.0,
+    "cutoff": 570.25,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.75,
+     "english": 1.75,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 2.0,
+    "cutoff": 557.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15121",
+  "school": "文藻外語大學",
+  "dept": "國際事務系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 1.0,
+    "cutoff": 609.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 8.0,
+    "admitted": 5.0,
+    "cutoff": 197.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15122",
+  "school": "文藻外語大學",
+  "dept": "國際企業管理系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 479.75,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 306.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 419.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15123",
+  "school": "文藻外語大學",
+  "dept": "東南亞學系",
+  "quota": 3,
+  "weights": {
+   "chinese": 2.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 9.0,
+    "admitted": 3.0,
+    "cutoff": 220.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 209.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 1.0,
+    "cutoff": 367.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15124",
+  "school": "致理科技大學",
+  "dept": "企業管理系",
+  "quota": 2,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 437.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 3.0,
+    "admitted": 3.0,
+    "cutoff": 451.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 481.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15125",
+  "school": "致理科技大學",
+  "dept": "行銷與流通管理系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 423.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 332.75,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 376.25,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15126",
+  "school": "致理科技大學",
+  "dept": "國際貿易系",
+  "quota": 7,
+  "weights": {
+   "chinese": 1.5,
+   "english": 1.5,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 9.0,
+    "admitted": 9.0,
+    "cutoff": 597.25,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 10.0,
+    "cutoff": 608.5,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 7.0,
+    "admitted": 7.0,
+    "cutoff": 626.75,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15127",
+  "school": "致理科技大學",
+  "dept": "應用英語系",
+  "quota": 15,
+  "weights": {
+   "chinese": 1.5,
+   "english": 1.5,
+   "math": 1.0,
+   "pro1": 3.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 37.0,
+    "admitted": 37.0,
+    "cutoff": 543.0,
+    "tiebreak": 62.0
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 33.0,
+    "admitted": 31.0,
+    "cutoff": 374.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.5,
+     "english": 1.5,
+     "math": 1.0,
+     "pro1": 3.0,
+     "pro2": 3.0
+    },
+    "quota": 15.0,
+    "admitted": 15.0,
+    "cutoff": 601.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15128",
+  "school": "致理科技大學",
+  "dept": "商務科技應用系",
+  "quota": 4,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {}
+ },
+ {
+  "code": "15129",
+  "school": "台北海洋科技大學",
+  "dept": "航海與航運管理系（士林校區）",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {}
+ },
+ {
+  "code": "15130",
+  "school": "國立宜蘭大學",
+  "dept": "外國語文學系",
+  "quota": 5,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 590.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 5.0,
+    "admitted": 5.0,
+    "cutoff": 585.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 587.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15131",
+  "school": "國立金門大學",
+  "dept": "應用英語學系",
+  "quota": 3,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 13.0,
+    "admitted": 10.0,
+    "cutoff": 227.0,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 10.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 3.0
+    },
+    "quota": 4.0,
+    "admitted": 3.0,
+    "cutoff": 418.5,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15132",
+  "school": "國立屏東大學",
+  "dept": "休閒事業經營學系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.25,
+     "math": 1.25,
+     "pro1": 3.0,
+     "pro2": 2.75
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 662.88,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 2.0,
+     "english": 1.25,
+     "math": 1.25,
+     "pro1": 3.0,
+     "pro2": 2.75
+    },
+    "quota": 2.0,
+    "admitted": 2.0,
+    "cutoff": 556.88,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 1.0,
+    "admitted": 1.0,
+    "cutoff": 403.0,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15133",
+  "school": "國立屏東大學",
+  "dept": "應用英語學系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.5,
+   "pro2": 2.5
+  },
+  "history": {
+   "112": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 591.5,
+    "tiebreak": null
+   },
+   "113": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 6.0,
+    "admitted": 6.0,
+    "cutoff": 548.0,
+    "tiebreak": null
+   },
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 2.0,
+     "math": 1.0,
+     "pro1": 2.5,
+     "pro2": 2.5
+    },
+    "quota": 4.0,
+    "admitted": 4.0,
+    "cutoff": 532.75,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15134",
+  "school": "慈濟學校財團法人慈濟大學",
+  "dept": "經營管理學系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 1.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 2.0
+  },
+  "history": {
+   "114": {
+    "weights": {
+     "chinese": 1.0,
+     "english": 1.0,
+     "math": 1.0,
+     "pro1": 2.0,
+     "pro2": 2.0
+    },
+    "quota": 5.0,
+    "admitted": 0.0,
+    "cutoff": null,
+    "tiebreak": null
+   }
+  }
+ },
+ {
+  "code": "15135",
+  "school": "慈濟學校財團法人慈濟大學",
+  "dept": "外語暨新興科技應用學系",
+  "quota": 1,
+  "weights": {
+   "chinese": 1.0,
+   "english": 2.0,
+   "math": 1.0,
+   "pro1": 2.0,
+   "pro2": 3.0
+  },
+  "history": {}
+ }
+]
