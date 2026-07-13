@@ -37,9 +37,13 @@ h1{font-size:22px;margin-bottom:4px}
 .card .t{font-size:12.5px;color:var(--muted)}
 .info{position:relative;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;margin-left:4px;border-radius:50%;background:#e2e8f0;color:#64748b;font-size:11px;font-weight:700;cursor:help;vertical-align:-2px;font-style:normal}
 .info:hover{background:var(--accent);color:#fff}
-.info .tip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(240px,72vw);background:#1e293b;color:#f1f5f9;font-size:12px;font-weight:400;line-height:1.6;padding:8px 11px;border-radius:8px;z-index:50;text-align:left;box-shadow:0 4px 14px rgba(0,0,0,.25);white-space:normal}
-.info .tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:#1e293b}
-.info:hover .tip,.info.show .tip{display:block}
+.info .tip,.tag.uq .tip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(240px,72vw);background:#1e293b;color:#f1f5f9;font-size:12px;font-weight:400;line-height:1.6;padding:8px 11px;border-radius:8px;z-index:50;text-align:left;box-shadow:0 4px 14px rgba(0,0,0,.25);white-space:normal}
+.info .tip::after,.tag.uq .tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:#1e293b}
+.info:hover .tip,.info.show .tip,.tag.uq:hover .tip,.tag.uq.show .tip{display:block}
+.tag.uq{position:relative;cursor:help;color:#d97706;border-color:#f59e0b66;background:#fffbeb}
+.tag.uq .tip{bottom:auto;top:calc(100% + 8px);left:auto;right:-10px;transform:none}
+.tag.uq .tip::after{top:auto;bottom:100%;left:auto;right:20px;transform:none;border-top-color:transparent;border-bottom-color:#1e293b}
+.yr b.soft{color:#94a3b8}
 .cards .card:first-child .info .tip,.cards .card:nth-child(2) .info .tip{left:0;transform:none}
 .cards .card:first-child .info .tip::after,.cards .card:nth-child(2) .info .tip::after{left:8px;transform:none}
 .card.c-safe .n{color:var(--ok)} .card.c-good .n{color:var(--maybe)}
@@ -170,7 +174,7 @@ tbody tr:hover{background:#fafcff}
     ⚠️ 注意事項:<br>
     · 歷年比較是用「你的分數 × 該年度該系倍率」對比「該年最低錄取總分」,倍率若逐年調整已分別計算。<br>
     · 每年統測難度不同、名額與報名人數會變動,歷年分數僅供落點參考,不保證錄取。<br>
-    · 「未足額」表示該年錄取人數少於招生名額(通常代表有登記就上),最低分參考價值較低。<br>
+    · 「未招滿」表示該年錄取人數少於招生名額(有填就上),其最低分以灰色顯示,參考價值低;點標籤可看詳細說明。<br>
     · 判定標準:穩上 = 三年皆超過最低分且對 114 年有 3% 以上緩衝;有機會 = 超過最近年度;邊緣 = 差距在 ±3% 內;困難 = 低於近年最低分。<br>
     · 115 學年度實際招生名額將於 115.7.27 公告,請以委員會網站與正式簡章為準。
   </div>
@@ -255,16 +259,23 @@ function yrCell(r, h, hasScores){
   if (!h) return '<div class="yr"><span class="na">未招生</span></div>';
   if (h.cutoff == null) return '<div class="yr"><span class="na">無錄取分</span><span class="na">0/'+(h.quota??'--')+' 人</span></div>';
   const cutoffStr = h.cutoff.toFixed(2).replace(/\.?0+$/,'');
-  const uq = r.underQuota ? '<span class="tag">未足額</span>' : '';
+  let uq = '';
+  if (r.underQuota){
+    const missing = h.quota - h.admitted;
+    uq = '<span class="tag uq">未招滿'
+      + '<span class="tip">該年 '+h.quota+' 個名額只錄取 '+h.admitted+' 人(缺 '+missing+')。'
+      + '沒招滿=當年有填就上,「最低 '+cutoffStr+'」只是最後一名錄取者的分數,不是競爭門檻,參考價值低。</span></span>';
+  }
+  const bCls = r.underQuota ? ' class="soft"' : '';
   if (!hasScores){  // 未輸入成績:只呈現事實,不做判定
-    return '<div class="yr"><span>最低 <b>'+cutoffStr+'</b>'+uq+'</span>'
+    return '<div class="yr"><span>最低 <b'+bCls+'>'+cutoffStr+'</b>'+uq+'</span>'
       + '<span class="na">'+(h.admitted??'--')+'/'+(h.quota??'--')+' 人</span></div>';
   }
   const diff = r.my - h.cutoff;
   const icon = r.pass ? '<span class="pass">✓</span>' : '<span class="fail">✗</span>';
   const diffStr = '<span class="'+(diff>=0?'pass':'fail')+'">'+(diff>=0?'+':'')+diff.toFixed(1)+'</span>';
   return '<div class="yr">'
-    + '<span>'+icon+' 最低 <b>'+cutoffStr+'</b>'+uq+'</span>'
+    + '<span>'+icon+' 最低 <b'+bCls+'>'+cutoffStr+'</b>'+uq+'</span>'
     + '<span class="na">差 '+diffStr+' · '+(h.admitted??'--')+'/'+(h.quota??'--')+' 人</span>'
     + '</div>';
 }
@@ -476,11 +487,11 @@ $('wishClear').addEventListener('click', () => {
   if (wish.length && confirm('確定要清空志願清單?')){ wish = []; saveWish(); render(); }
 });
 $('simYear').addEventListener('change', render);
-// ⓘ 說明泡泡:點擊開關(手機用),點空白處收合;滑鼠懸停由 CSS :hover 處理
+// ⓘ 與「未招滿」說明泡泡:點擊開關(手機用),點空白處收合;滑鼠懸停由 CSS :hover 處理
 document.addEventListener('click', e => {
-  const info = e.target.closest('.info');
+  const info = e.target.closest('.info, .tag.uq');
   const wasOpen = info && info.classList.contains('show');
-  document.querySelectorAll('.info.show').forEach(x => x.classList.remove('show'));
+  document.querySelectorAll('.info.show, .tag.uq.show').forEach(x => x.classList.remove('show'));
   if (info && !wasOpen) info.classList.add('show');
 });
 
