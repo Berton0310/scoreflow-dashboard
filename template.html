@@ -24,6 +24,7 @@ h1{font-size:22px;margin-bottom:4px}
 .scores{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end}
 .score-field{display:flex;flex-direction:column;gap:5px}
 .score-field label{font-size:13px;color:var(--muted)}
+.score-field label .subj{display:block;font-size:11px;color:#94a3b8;margin-top:1px;max-width:130px;line-height:1.4}
 .score-field input{width:110px;padding:9px 10px;border:1px solid var(--line);border-radius:9px;font-size:16px;text-align:center}
 .score-field input:focus{outline:2px solid var(--accent);border-color:transparent}
 .hint{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.7}
@@ -113,11 +114,11 @@ tbody tr:hover{background:#fafcff}
   <div class="panel">
     <h2>✏️ 輸入你的統測原始分數(各科 0–100)</h2>
     <div class="scores">
-      <div class="score-field"><label>國文</label><input type="number" id="s-chinese" min="0" max="100" step="0.5" placeholder="0"></div>
-      <div class="score-field"><label>英文</label><input type="number" id="s-english" min="0" max="100" step="0.5" placeholder="0"></div>
-      <div class="score-field"><label>數學</label><input type="number" id="s-math" min="0" max="100" step="0.5" placeholder="0"></div>
-      <div class="score-field"><label>專業(一)</label><input type="number" id="s-pro1" min="0" max="100" step="0.5" placeholder="0"></div>
-      <div class="score-field"><label>專業(二)</label><input type="number" id="s-pro2" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>國文<span class="subj">&nbsp;</span></label><input type="number" id="s-chinese" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>英文<span class="subj">&nbsp;</span></label><input type="number" id="s-english" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>數學<span class="subj">數學(B)</span></label><input type="number" id="s-math" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>專業(一)<span class="subj">商業概論、數位科技概論與應用</span></label><input type="number" id="s-pro1" min="0" max="100" step="0.5" placeholder="0"></div>
+      <div class="score-field"><label>專業(二)<span class="subj">英文閱讀與寫作</span></label><input type="number" id="s-pro2" min="0" max="100" step="0.5" placeholder="0"></div>
     </div>
     <div class="hint">每個校系權重不同,系統會用「該系該年度的官方倍率」計算你的加權總分,再與該年最低錄取分數比較。分數會自動存在瀏覽器,下次打開不用重打。</div>
   </div>
