@@ -39,6 +39,7 @@ python build.py        # 注入 template.html -> index.html
 - 選擇基準年(112/113/114)後,系統依分發規則(由第 1 志願往下、錄取第一個達標者)
   標出 🎯 預估落點
 - 清單與順序自動存在瀏覽器 localStorage
+- 匯出:📷 PNG 圖卡(手機查看/分享用)、📋 純文字(貼 LINE / 對照選填系統)、⬇️ CSV(Excel)
 
 ## 判定標準
 

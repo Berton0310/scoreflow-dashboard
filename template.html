@@ -71,7 +71,8 @@ tbody tr:hover{background:#fafcff}
 .wish-head .sp{flex:1}
 .wish-head select{padding:6px 8px;border:1px solid var(--line);border-radius:8px;font-size:13px;background:#fff}
 .wish-head button{padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:13px;cursor:pointer;color:var(--muted)}
-.wish-head button:hover{border-color:var(--risk);color:var(--risk)}
+.wish-head button:hover{border-color:var(--accent);color:var(--accent)}
+.wish-head button#wishClear:hover{border-color:var(--risk);color:var(--risk)}
 .wish-empty{color:var(--muted);font-size:13.5px;padding:14px 4px}
 .wish-list{display:flex;flex-direction:column;gap:6px}
 .wish-item{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;cursor:grab}
@@ -123,6 +124,9 @@ tbody tr:hover{background:#fafcff}
       <label style="font-size:13px;color:var(--muted)">落點模擬基準:
         <select id="simYear"><option value="114">114 年</option><option value="113">113 年</option><option value="112">112 年</option></select>
       </label>
+      <button id="wishImg">📷 匯出圖片</button>
+      <button id="wishCopy">📋 複製文字</button>
+      <button id="wishCsv">⬇️ CSV</button>
       <button id="wishClear">全部清除</button>
     </div>
     <div class="wish-empty" id="wishEmpty">還沒加入任何志願 — 在下方表格點 ☆ 星號就能收藏,拖曳或用 ↑↓ 調整順序,系統會模擬你會落在第幾志願。</div>
@@ -324,18 +328,23 @@ function moveWish(i, dir){
   saveWish(); render();
 }
 
-function renderWish(scores){
-  const simYear = $('simYear').value;
-  $('wishCount').textContent = wish.length;
-  $('wishEmpty').style.display = wish.length ? 'none' : 'block';
-
-  // 落點:由第 1 志願往下,找到第一個「該基準年有錄取分數且我的加權總分達標」的志願
+// 落點:由第 1 志願往下,找到第一個「該基準年有錄取分數且我的加權總分達標」的志願
+function computeSim(scores, simYear){
   let landIdx = -1, unknown = 0;
   for (let i = 0; i < wish.length; i++){
     const h = byCode[wish[i]].history[simYear];
     if (!h || h.cutoff == null){ unknown++; continue; }
     if (weighted(scores, h.weights) >= h.cutoff){ landIdx = i; break; }
   }
+  return {landIdx, unknown};
+}
+
+function renderWish(scores){
+  const simYear = $('simYear').value;
+  $('wishCount').textContent = wish.length;
+  $('wishEmpty').style.display = wish.length ? 'none' : 'block';
+
+  const {landIdx, unknown} = computeSim(scores, simYear);
 
   $('wishList').innerHTML = wish.map((code, i) => {
     const d = byCode[code];
@@ -421,6 +430,179 @@ $('wishClear').addEventListener('click', () => {
   if (wish.length && confirm('確定要清空志願清單?')){ wish = []; saveWish(); render(); }
 });
 $('simYear').addEventListener('change', render);
+
+// ---------- 匯出 ----------
+function yearMarks(d, scores){
+  return ['112','113','114'].map(y => {
+    const h = d.history[y];
+    if (!h || h.cutoff == null) return {y, s:'--'};
+    return {y, s: weighted(scores, h.weights) >= h.cutoff ? '✓' : '✗'};
+  });
+}
+function flash(btn, txt){
+  const old = btn.textContent;
+  btn.textContent = txt;
+  setTimeout(() => btn.textContent = old, 1500);
+}
+function stamp(){
+  const n = new Date();
+  return n.getFullYear()+'/'+(n.getMonth()+1)+'/'+n.getDate()+' '+String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0');
+}
+function scoreLine(scores){
+  return '國'+scores.chinese+' 英'+scores.english+' 數'+scores.math+' 專一'+scores.pro1+' 專二'+scores.pro2;
+}
+
+function wishText(){
+  const scores = getScores();
+  const simYear = $('simYear').value;
+  const {landIdx} = computeSim(scores, simYear);
+  const lines = [];
+  lines.push('📋 我的統測志願序(15外語群英語類)');
+  lines.push('成績:' + scoreLine(scores));
+  lines.push('');
+  wish.forEach((code, i) => {
+    const d = byCode[code];
+    const marks = yearMarks(d, scores).map(m => m.y + m.s).join(' ');
+    lines.push((i+1) + '. ' + (isPublic(d.school)?'[公]':'[私]') + d.school + ' ' + d.dept
+      + '(' + d.code + ')加權' + weighted(scores, d.weights).toFixed(1) + ' [' + marks + ']'
+      + (i === landIdx ? ' 🎯預估落點' : ''));
+  });
+  lines.push('');
+  if (landIdx >= 0){
+    const d = byCode[wish[landIdx]];
+    lines.push('以' + simYear + '年標準預估落點:第' + (landIdx+1) + '志願 ' + d.school + ' ' + d.dept);
+  } else {
+    lines.push('以' + simYear + '年標準:皆未達歷年最低分');
+  }
+  lines.push(stamp() + ' · berton0310.github.io/scoreflow-dashboard');
+  return lines.join('\n');
+}
+
+$('wishCopy').addEventListener('click', e => {
+  if (!wish.length) return alert('志願清單是空的,先在表格點 ☆ 加入吧!');
+  navigator.clipboard.writeText(wishText()).then(
+    () => flash(e.target, '✅ 已複製'),
+    () => { // fallback
+      const ta = document.createElement('textarea');
+      ta.value = wishText(); document.body.appendChild(ta);
+      ta.select(); document.execCommand('copy'); ta.remove();
+      flash(e.target, '✅ 已複製');
+    });
+});
+
+$('wishCsv').addEventListener('click', () => {
+  if (!wish.length) return alert('志願清單是空的,先在表格點 ☆ 加入吧!');
+  const scores = getScores();
+  const rows = [['順序','志願代碼','學校','科系','公私立','115名額','我的加權總分(115)','112','113','114']];
+  wish.forEach((code, i) => {
+    const d = byCode[code];
+    const m = yearMarks(d, scores);
+    rows.push([i+1, d.code, d.school, d.dept, isPublic(d.school)?'公立':'私立',
+      d.quota ?? '', weighted(scores, d.weights).toFixed(1), m[0].s, m[1].s, m[2].s]);
+  });
+  const csv = '﻿' + rows.map(r => r.map(c => '"'+String(c).replace(/"/g,'""')+'"').join(',')).join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([csv], {type:'text/csv;charset=utf-8'}));
+  a.download = '我的志願序.csv'; a.click();
+  URL.revokeObjectURL(a.href);
+});
+
+function roundRect(g, x, y, w, h, r){
+  g.beginPath();
+  g.moveTo(x+r, y); g.arcTo(x+w, y, x+w, y+h, r); g.arcTo(x+w, y+h, x, y+h, r);
+  g.arcTo(x, y+h, x, y, r); g.arcTo(x, y, x+w, y, r); g.closePath();
+}
+
+$('wishImg').addEventListener('click', () => {
+  if (!wish.length) return alert('志願清單是空的,先在表格點 ☆ 加入吧!');
+  const scores = getScores();
+  const simYear = $('simYear').value;
+  const {landIdx} = computeSim(scores, simYear);
+  const S = 2, W = 560*S;                    // 2x 解析度,手機看才清晰
+  const headH = 148*S, rowH = 66*S, footH = 78*S, pad = 18*S;
+  const H = headH + wish.length*rowH + footH;
+  const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+  const g = cv.getContext('2d');
+  const F = '"Microsoft JhengHei","PingFang TC",sans-serif';
+
+  g.fillStyle = '#f4f6fa'; g.fillRect(0, 0, W, H);
+  // header
+  g.fillStyle = '#1a2433'; g.font = 'bold ' + 21*S + 'px ' + F;
+  g.fillText('📊 我的統測志願序', pad, 38*S);
+  g.font = 13*S + 'px ' + F; g.fillStyle = '#68758a';
+  g.fillText('15 外語群英語類 · 115 學年度四技二專聯合登記分發', pad, 62*S);
+  g.fillText('成績:' + scoreLine(scores), pad, 84*S);
+  // sim summary
+  g.font = 'bold ' + 14*S + 'px ' + F;
+  if (landIdx >= 0){
+    const d = byCode[wish[landIdx]];
+    g.fillStyle = '#16a34a';
+    g.fillText('🎯 以 ' + simYear + ' 年標準預估落點:第 ' + (landIdx+1) + ' 志願 ' + d.school + ' ' + d.dept, pad, 110*S);
+  } else {
+    g.fillStyle = '#dc2626';
+    g.fillText('以 ' + simYear + ' 年標準:清單志願皆未達歷年最低分', pad, 110*S);
+  }
+  g.strokeStyle = '#e3e8f0'; g.lineWidth = S;
+  g.beginPath(); g.moveTo(pad, 128*S); g.lineTo(W-pad, 128*S); g.stroke();
+
+  // rows
+  wish.forEach((code, i) => {
+    const d = byCode[code];
+    const y = headH + i*rowH;
+    const landing = i === landIdx;
+    g.fillStyle = landing ? '#ecfdf3' : '#ffffff';
+    roundRect(g, pad, y, W-2*pad, rowH-10*S, 10*S); g.fill();
+    if (landing){ g.strokeStyle = '#16a34a'; g.lineWidth = 1.5*S; g.stroke(); }
+    // rank
+    g.fillStyle = '#2563eb'; g.font = 'bold ' + 18*S + 'px ' + F;
+    g.textAlign = 'center';
+    g.fillText(String(i+1), pad + 22*S, y + 34*S);
+    g.textAlign = 'left';
+    // pub/pri tag
+    const pub = isPublic(d.school);
+    g.fillStyle = pub ? '#dbeafe' : '#f3e8ff';
+    roundRect(g, pad + 40*S, y + 10*S, 34*S, 18*S, 4*S); g.fill();
+    g.fillStyle = pub ? '#1d4ed8' : '#9333ea';
+    g.font = 'bold ' + 11*S + 'px ' + F;
+    g.fillText(pub ? '公立' : '私立', pad + 45*S, y + 23.5*S);
+    // school + dept
+    g.fillStyle = '#1a2433'; g.font = 'bold ' + 14*S + 'px ' + F;
+    g.fillText(d.school, pad + 80*S, y + 24*S);
+    g.fillStyle = '#68758a'; g.font = 12.5*S + 'px ' + F;
+    let dept = d.dept + '(' + d.code + ')';
+    if (dept.length > 22) dept = dept.slice(0, 21) + '…';
+    g.fillText(dept, pad + 80*S, y + 44*S);
+    // landing tag
+    if (landing){
+      g.fillStyle = '#16a34a'; g.font = 'bold ' + 11.5*S + 'px ' + F;
+      g.fillText('🎯 預估落點', pad + 80*S + g.measureText(d.school).width * 1.25 + 14*S, y + 24*S);
+    }
+    // right: total + year marks
+    g.textAlign = 'right';
+    g.fillStyle = '#1a2433'; g.font = 'bold ' + 15*S + 'px ' + F;
+    g.fillText(weighted(scores, d.weights).toFixed(1), W - pad - 14*S, y + 24*S);
+    g.font = 11.5*S + 'px ' + F;
+    let x = W - pad - 14*S;
+    yearMarks(d, scores).reverse().forEach(m => {
+      g.fillStyle = m.s === '✓' ? '#16a34a' : (m.s === '✗' ? '#dc2626' : '#94a3b8');
+      g.fillText(m.y + m.s, x, y + 44*S);
+      x -= 48*S;
+    });
+    g.textAlign = 'left';
+  });
+
+  // footer
+  g.fillStyle = '#94a3b8'; g.font = 11.5*S + 'px ' + F;
+  g.fillText('✓=超過該年最低錄取分 ✗=未達 --=無資料 · 歷年僅供參考,不保證錄取', pad, H - 44*S);
+  g.fillText(stamp() + ' · berton0310.github.io/scoreflow-dashboard', pad, H - 22*S);
+
+  cv.toBlob(b => {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(b);
+    a.download = '我的志願序.png'; a.click();
+    URL.revokeObjectURL(a.href);
+  }, 'image/png');
+});
 
 // persistence
 function save(){ localStorage.setItem('tsScores', JSON.stringify(getScores())); }
