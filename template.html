@@ -33,7 +33,13 @@ h1{font-size:22px;margin-bottom:4px}
 .card.active{outline:2px solid var(--accent)}
 .card .n{font-size:26px;font-weight:700}
 .card .t{font-size:12.5px;color:var(--muted)}
-.card .crit{font-size:11px;color:#94a3b8;margin-top:3px;line-height:1.45}
+.info{position:relative;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;margin-left:4px;border-radius:50%;background:#e2e8f0;color:#64748b;font-size:11px;font-weight:700;cursor:help;vertical-align:-2px;font-style:normal}
+.info:hover{background:var(--accent);color:#fff}
+.info .tip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(240px,72vw);background:#1e293b;color:#f1f5f9;font-size:12px;font-weight:400;line-height:1.6;padding:8px 11px;border-radius:8px;z-index:50;text-align:left;box-shadow:0 4px 14px rgba(0,0,0,.25);white-space:normal}
+.info .tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:#1e293b}
+.info:hover .tip,.info.show .tip{display:block}
+.cards .card:first-child .info .tip,.cards .card:nth-child(2) .info .tip{left:0;transform:none}
+.cards .card:first-child .info .tip::after,.cards .card:nth-child(2) .info .tip::after{left:8px;transform:none}
 .card.c-safe .n{color:var(--ok)} .card.c-good .n{color:var(--maybe)}
 .card.c-edge .n{color:var(--warn)} .card.c-hard .n{color:var(--risk)}
 .card.c-none .n{color:var(--none)}
@@ -264,9 +270,17 @@ function render(){
     ['none','⚪ 無歷年資料',counts.none,'c-none','115 新設/更名系科,或歷年無錄取分數可比'],
   ];
   $('cards').innerHTML = cardDefs.map(([k,t,n,cc,crit]) =>
-    '<div class="card '+cc+(activeFilter===k?' active':'')+'" data-f="'+k+'" title="'+crit+'"><div class="n">'+(hasScores||k===''||k==='none'?n:'–')+'</div><div class="t">'+t+'</div><div class="crit">'+crit+'</div></div>'
+    '<div class="card '+cc+(activeFilter===k?' active':'')+'" data-f="'+k+'"><div class="n">'+(hasScores||k===''||k==='none'?n:'–')+'</div>'
+    + '<div class="t">'+t+'<span class="info">i<span class="tip">'+crit+'</span></span></div></div>'
   ).join('');
-  document.querySelectorAll('.card').forEach(el => el.onclick = () => {
+  document.querySelectorAll('.card').forEach(el => el.onclick = e => {
+    const info = e.target.closest('.info');
+    if (info){  // 點 ⓘ:只切換說明,不觸發篩選(手機用)
+      const wasOpen = info.classList.contains('show');
+      document.querySelectorAll('.info.show').forEach(x => x.classList.remove('show'));
+      if (!wasOpen) info.classList.add('show');
+      return;
+    }
     activeFilter = (activeFilter === el.dataset.f) ? '' : el.dataset.f; render();
   });
 
@@ -436,6 +450,11 @@ $('wishClear').addEventListener('click', () => {
   if (wish.length && confirm('確定要清空志願清單?')){ wish = []; saveWish(); render(); }
 });
 $('simYear').addEventListener('change', render);
+// 點空白處收合 ⓘ 說明泡泡(手機用)
+document.addEventListener('click', e => {
+  if (!e.target.closest('.info'))
+    document.querySelectorAll('.info.show').forEach(x => x.classList.remove('show'));
+});
 
 // ---------- 匯出 ----------
 function yearMarks(d, scores){
